@@ -15,11 +15,11 @@
 		3FAF6A761F5A816200114239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FAF6A741F5A816200114239 /* LaunchScreen.storyboard */; };
 		3FAF6A811F5A816200114239 /* rotationGesturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF6A801F5A816200114239 /* rotationGesturesTests.m */; };
 		3FAF6A8C1F5A816200114239 /* rotationGesturesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FAF6A8B1F5A816200114239 /* rotationGesturesUITests.m */; };
-		3FAF6A9A1F5A81C900114239 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3FAF6A991F5A81C900114239 /* download.jpeg */; };
 		3FAF6A9D1F5A81F900114239 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAF6A9C1F5A81F900114239 /* UIKit.framework */; };
 		3FAF6A9F1F5A821C00114239 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAF6A9E1F5A821C00114239 /* CoreGraphics.framework */; };
 		3FAF6AA11F5A822300114239 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAF6AA01F5A822300114239 /* AVKit.framework */; };
 		3FAF6AA31F5A822A00114239 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FAF6AA21F5A822A00114239 /* AVFoundation.framework */; };
+		3FAF6AE61F5A9C7E00114239 /* download.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3FAF6AE51F5A9C7E00114239 /* download.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,11 +56,11 @@
 		3FAF6A871F5A816200114239 /* rotationGesturesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rotationGesturesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FAF6A8B1F5A816200114239 /* rotationGesturesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = rotationGesturesUITests.m; sourceTree = "<group>"; };
 		3FAF6A8D1F5A816200114239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3FAF6A991F5A81C900114239 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = download.jpeg; path = ../../download.jpeg; sourceTree = "<group>"; };
 		3FAF6A9C1F5A81F900114239 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3FAF6A9E1F5A821C00114239 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3FAF6AA01F5A822300114239 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		3FAF6AA21F5A822A00114239 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3FAF6AE51F5A9C7E00114239 /* download.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = download.jpeg; path = ../../../Desktop/download.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 		3FAF6A651F5A816200114239 /* rotationGestures */ = {
 			isa = PBXGroup;
 			children = (
-				3FAF6A991F5A81C900114239 /* download.jpeg */,
+				3FAF6AE51F5A9C7E00114239 /* download.jpeg */,
 				3FAF6A691F5A816200114239 /* AppDelegate.h */,
 				3FAF6A6A1F5A816200114239 /* AppDelegate.m */,
 				3FAF6A6C1F5A816200114239 /* ViewController.h */,
@@ -274,7 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FAF6A761F5A816200114239 /* LaunchScreen.storyboard in Resources */,
-				3FAF6A9A1F5A81C900114239 /* download.jpeg in Resources */,
+				3FAF6AE61F5A9C7E00114239 /* download.jpeg in Resources */,
 				3FAF6A731F5A816200114239 /* Assets.xcassets in Resources */,
 				3FAF6A711F5A816200114239 /* Main.storyboard in Resources */,
 			);
@@ -537,6 +537,7 @@
 				3FAF6A921F5A816200114239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FAF6A931F5A816200114239 /* Build configuration list for PBXNativeTarget "rotationGesturesTests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +546,7 @@
 				3FAF6A951F5A816200114239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3FAF6A961F5A816200114239 /* Build configuration list for PBXNativeTarget "rotationGesturesUITests" */ = {
 			isa = XCConfigurationList;
@@ -553,6 +555,7 @@
 				3FAF6A981F5A816200114239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
