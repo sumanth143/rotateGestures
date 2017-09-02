@@ -30,7 +30,7 @@
         [self.imagepava addGestureRecognizer:canvasimageGesture];
         self.imagepava.userInteractionEnabled= YES;
     
-     //Do any additional setup after loading the view, typically from a nib.
+  
 }
 
 -(void)handleimagepan:(UIPanGestureRecognizer *)recognizer
