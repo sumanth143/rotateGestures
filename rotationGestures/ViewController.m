@@ -10,15 +10,49 @@
 
 @interface ViewController ()
 
+{
+    UIPanGestureRecognizer * canvasimageGesture;
+    NSInteger x;
+    NSInteger y;
+    
+
+
+}
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+        self.imagepava.image=[UIImage imageNamed:@"download.jpeg"];
+        canvasimageGesture=[[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handleimagepan:)];
+        [self.imagepava addGestureRecognizer:canvasimageGesture];
+        self.imagepava.userInteractionEnabled= YES;
+    
+     //Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)handleimagepan:(UIPanGestureRecognizer *)recognizer
+{
+    CGPoint translation = [recognizer translationInView:self.view];
+    recognizer.view.center = CGPointMake(recognizer.view.center.x + translation.x, recognizer.view.center.y + translation.y);
+    [recognizer setTranslation:CGPointMake(0, 0) inView:self.view];
+    x=recognizer.view.center.x+translation.x;
+    y=recognizer.view.center.y+translation.y;
+}
+
+-(IBAction)rotateGestureHandler:(UIRotationGestureRecognizer *)sender
+{
+    CGFloat netRotation=0.0;
+    CGFloat Rotation=[(UIRotationGestureRecognizer *)sender rotation];
+    CGAffineTransform transform=CGAffineTransformMakeRotation(Rotation+netRotation);
+    sender.view.transform=transform;
+    if (sender.state== UIGestureRecognizerStateEnded)
+    {
+        netRotation+=Rotation;
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
